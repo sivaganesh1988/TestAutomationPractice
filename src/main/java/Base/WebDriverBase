@@ -1,0 +1,26 @@
+package Base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.HashMap;
+
+public class WebDriverBase {
+    public static WebDriver driver;
+    private static HashMap<Long, WebDriver> map = new HashMap<Long, WebDriver>();
+
+    public void loadWebDriver(){
+        System.setProperty("webdriver.chrome.driver", "src/main/java/Drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        map.put(Thread.currentThread().getId(), driver);
+    }
+
+    public WebDriver getDriverInstance() {
+        WebDriver toReturn = map.get(Thread.currentThread().getId());
+        if (toReturn == null) {
+            loadWebDriver();
+        }
+        return map.get(Thread.currentThread().getId());
+    }
+}
