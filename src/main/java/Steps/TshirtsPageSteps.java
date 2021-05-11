@@ -22,5 +22,6 @@ public class TshirtsPageSteps{
     public void customerIsAbleToSeeTheItemAddedToTheCart() {
 
         tshirtsPage.assertItemsAdded();
+ 
     }
 }
