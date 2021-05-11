@@ -39,4 +39,5 @@ public class SummaryPageSteps {
     public void customerAgreesToTheTermsAndProceedsFurtherForCheckout() {
         summaryPage.proceedToCheckout();
     }
+    
 }
