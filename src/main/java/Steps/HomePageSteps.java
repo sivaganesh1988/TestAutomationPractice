@@ -16,4 +16,14 @@ public class HomePageSteps {
     public void customerNavigatesToShirtspage() {
         homePage.GotoTshirtsPage();
     }
+
+    @Given("^customer is already signed up for the ordering website$")
+    public void customerIsAlreadySignedUpForTheOrderingWebsite() {
+homePage.navigateToHomePage();
+    }
+
+    @When("^customer navigates to login page$")
+    public void customerNavigatesToLoginPage() {
+        homePage.clickLogin();
+    }
 }
