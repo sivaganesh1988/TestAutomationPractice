@@ -33,7 +33,7 @@ public class TshirtsPage extends PageBase {
 
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(0,600)");
-        
+
 
        driver.findElement(By.xpath("//*[@id=\"list\"]/a/i")).click();
         WebElement checkoutButton = wait.until(
