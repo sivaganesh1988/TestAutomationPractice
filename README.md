@@ -1,4 +1,4 @@
-This is a sample project to demonstrate automation framework to test an ecommerce website.
+<strong> This is a sample project to demonstrate automation framework to test an ecommerce website. </strong>
 
 Steps to execute the framework
 
