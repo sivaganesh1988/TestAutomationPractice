@@ -20,6 +20,7 @@ public class SummaryPage extends PageBase {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[class='button btn btn-default standard-checkout button-medium']")));
         driver.findElement(By.cssSelector("a[class='button btn btn-default standard-checkout button-medium']")).click();
     }
+    
 
     public void proceedToShipping(){
       WebElement proceedtoshippingbutton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("processAddress")));
